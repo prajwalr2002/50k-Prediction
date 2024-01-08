@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    
+    
+</head>
+<body>
+   <h1>Income Prediction</h1>
+    <form action="/predict" method="post">
+      
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+        <br>
+
+        <label for="workclass">Workclass:</label>
+        <input type="text" id="workclass" name="workclass" required>
+        <br>
+
+        <label for="education_num">Education Num:</label>
+        <input type="text" id="education_num" name="education_num" required>
+    <br>
+
+
+        <label for="marital_status">Marital Status:</label>
+        <input type="text" id="marital_status" name="marital_status" required>
+        <br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" required>
+        <br>
+
+        <label for="relationship">Relationship:</label>
+        <input type="text" id="relationship" name="relationship" required>
+        <br>
+
+        <label for="race">Race:</label>
+        <input type="text" id="race" name="race" required>
+        <br>
+
+        <label for="sex">Sex:</label>
+        <input type="text" id="sex" name="sex" required>
+        <br>
+
+        <label for="capital_gain">Capital Gain:</label>
+        <input type="text" id="capital_gain" name="capital_gain" required>
+        <br>
+
+        <label for="capital_loss">Capital Loss:</label>
+        <input type="text" id="capital_loss" name="capital_loss" required>
+        <br>
+
+        <label for="hours_per_week">Hours per Week:</label>
+        <input type="text" id="hours_per_week" name="hours_per_week" required>
+        <br>
+
+        <label for="native_country">Native Country:</label>
+        <input type="text" id="native_country" name="native_country" required>
+        <br>
+
+   
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
